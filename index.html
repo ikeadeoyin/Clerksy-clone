@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -18,7 +18,7 @@
                 <ul class="nav_items">
                     <li class="nav_item"><a href="">Log in</a></li>
                     <li class="nav_item"><a href="">884-6788-9574</a></li>
-                    <li class="nav_item"><a href="">Get Started</a></li>
+                    <li class="nav_item"><a href="" class="btn btn-primary">Get Started</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,17 +40,18 @@
     </section>
     <section class="story">
         <div class="container">
-            <div class="two_column two-halves">
+            <div class="twos">
                 <div class="image">
                     <img src="images/cast.svg" alt="cast">
+
                 </div>
-                <div class="text">
+                <div class="story_text">
                     <h2>Put the human back in HR.</h2>
                     <p>Your employees are the real stars. Show the love and help them perform!</p>
                 </div>
             </div>
-            <div class="two_column two-halves">
-                <div class="text">
+            <div class="twos juggling">
+                <div class="story_text">
                     <h2>You don’t have to play all the parts.</h2>
                     <p>Sales, accounting, HR— Oh My! You can’t do it all - let Clerksy help.</p>
                 </div>
@@ -80,7 +81,7 @@
             <h2>HR Production of the Highest Quality</h2>
             <div class="cards">
                 <div class="offering">
-                    <img src="images/hr-production-1.svg" alt="hr-production-1">
+                    <img src="images/hr-production-1.svg" alt="hr-production-1" class="hr_icon">
                     <p>
                         Educates & Informs
                         <br>
@@ -88,7 +89,7 @@
                     </p>
                 </div>
                 <div class="offering">
-                    <img src="images/hr-production-2.svg" alt="hr-production-2">
+                    <img src="images/hr-production-2.svg" alt="hr-production-2" class="hr_icon">
                     <p>
                         Protects Your Business
                         <br>
@@ -96,7 +97,7 @@
                     </p>
                 </div>
                 <div class="offering">
-                    <img src="images/hr-production-3.svg" alt="hr-production-3">
+                    <img src="images/hr-production-3.svg" alt="hr-production-3" class="hr_icon">
                     <p>
                         Manages & Stores
                         <br>
@@ -104,7 +105,7 @@
                     </p>
                 </div>
                 <div class="offering">
-                    <img src="images/hr-production-4.svg" alt="hr-production-4">
+                    <img src="images/hr-production-4.svg" alt="hr-production-4" class="hr_icon">
                     <p>
                         Create a Healthy
                         <br>
@@ -124,13 +125,17 @@
         </div>
     </section>
     <section class="scenes">
-        <div class="container">
-            <h2>
-                How the scenes fit together
-            </h2>
-            <p>
-                Employee Training & Development, Diversity & Inclusion Programs, and Conflict Resolution.
-            </p>
+        <div class="container twos">
+            <div class="scenes_text">
+                <h2>
+                    How the scenes fit together
+                </h2>
+                <p>
+                    Employee Training & Development, Diversity & Inclusion Programs, and Conflict Resolution.
+                </p>
+
+            </div>
+        
             <img src="images/scenes.svg" alt="scenes">
         </div>
     </section>
@@ -138,9 +143,9 @@
         <div class="container">
             <h2>Consider everyone's best interest</h2>
             <p>HR is for everyone. Clerksy can help you.</p>
-            <div class="cards">
-                <div class="card">
-                    <img src="images/services-1.svg" alt="services-1">
+            <div class="services_cards">
+                <div class="services_card">
+                    <img src="images/services-1.svg" alt="services-1" class="services_icon">
                     <h3>Protect Your Comapany</h3>
                     <ul>
                         <li>Compliance Audits & Training</li>
@@ -148,8 +153,8 @@
                         <li>Policy Drafting</li>
                     </ul>
                 </div>
-                <div class="card">
-                    <img src="images/services-2.svg" alt="services-2">
+                <div class="services_card">
+                    <img src="images/services-2.svg" alt="services-2" class="services_icon">
                     <h3>Set Your Employees Up For Success</h3>
                     <ul>
                         <li>Learning & Development</li>
@@ -158,8 +163,8 @@
                         <li>Employee Performance</li>
                     </ul>
                 </div>
-                <div class="card">
-                    <img src="images/services-3.svg" alt="services-3">
+                <div class="services_card">
+                    <img src="images/services-3.svg" alt="services-3" class="services_icon">
                     <h3>Know Your Industry's Legal Landscape</h3>
                     <ul>
                         <li>Work Place Investigations</li>
@@ -172,63 +177,113 @@
     </section>
     <section class="pricing">
         <div class="container">
-            <div class="one">
-                <p>
-                    Fill out a form and tell us what you're looking for:
-                </p>
-                <h3>5 minutes</h3>
+            <h2>It's as easy as 1,2,3</h2>
+            <p>Clerksy can help use your unique business needs. Here's how:</p>
+            <div class="numbers">
+                <div class="one">
+                    <p>
+                        Fill out a form and tell us what you're looking for:
+                    </p>
+                    <h3>5 minutes</h3>
+                    
+                </div>
                 <div class="pricing_img">
                     <img src="images/over-arrow.svg" alt="">
                 </div>
-            </div>
-            <div class="two">
-                <p>
-                    Time it will take a Clerksy rep to follow up:
-                </p>
-                <h3>24 hours</h3>
+                <div class="two">
+                    <p>
+                        Time it will take a Clerksy rep to follow up:
+                    </p>
+                    <h3>24 hours</h3>
+                    
+                </div>
                 <div class="pricing_img">
                     <img src="images/under-arrow.svg" alt="under-arrow">
                 </div>
+                <div class="three">
+                    <img src="images/pricing.svg" alt="pricing">
+                </div>
+
             </div>
-            <div class="three">
-                <img src="images/pricing.svg" alt="pricing">
-            </div>
-            <a href="#">Book Free Discovery Call</a>
+            
+            <a href="#" class="btn btn-primary">Book Free Discovery Call</a>
         </div>
     </section>
     <section class="ebook">
-        <div class="container">
+        <div class="container ebook_grid">
             <div class="ebook_text">
                 <h2>Not just another HR resource.</h2>
                 <p>Simple. Entertaining. Informative.</p>
-                <a href="#">Download E-book</a>
+                <a href="#" class="btn btn-primary">Download E-book</a>
             </div>
             <img src="images/ebook.svg" alt="ebook">
             
         </div>
     </section>
     <section class="cta">
-        <div class="container">
-            <h2>Get Started With Clerksy</h2>
-            <p>Make sure your business puts people first.</p>
-            <a href="#">Book a Free Discovery Call</a>
-            <img src="images/leafs1.svg" alt="leafs1">
-            <img src="images/leafs2.svg" alt="leafs2">
+        <div class="container cta_flex">
+            <div class="cta_text">
+                <h2>Get Started With Clerksy</h2>
+                <p>Make sure your business puts people first.</p>
+                <a href="#" class="btn btn-secondary">Book a Free Discovery Call</a>
+
+            </div>
+           
+          <img src="images/leafs1.svg" alt="leafs1" class="cta_img1">
+            <img src="images/leafs2.svg" alt="leafs" class="cta_img2">
         </div>
     </section>
     <section class="newsletter">
-        <div class="container">
-            <h2>Stay up to date!</h2>
-            <p>Sign up for the latest Clerksy news.</p>
-            <form action="" method="post">
-                <input type="email" name="" id="" placeholder="Enter your e-mail">
-            </form>
-            <p>By submitting your email you agree to receive updates about Clerksy. You can unsubscribe at any time. View our full 
-                <a href="">Privacy Policy</a>
-            </p>
+        <div class="container newsletter_flex">
+            <div class="newsletter_text">
+                <h2>Stay up to date!</h2>
+                <p>Sign up for the latest Clerksy news.</p>
+            </div>
+            <div class="newsletter_form">
+                <form action="" method="post">
+                    <input type="email" name="" id="" placeholder="Enter your e-mail">
+                    <a type="submit" class="btn btn-primary">Sign up</a>
+                </form>
+                <p class="small">By submitting your email you agree to receive updates about Clerksy. You can unsubscribe at any time. View our full 
+                    <a href="#">Privacy Policy.</a>
+                </p>
+
+            </div>
+            
+            
         </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="footer_top">
+                <img src="images/logo.svg" alt="logo">
+                <p class="footer_p">A People Company</p>
+                <span>
+                    <a href=""><img src="images/facebook.svg" alt="facebook"></a>
+                    <a href=""><img src="images/twitter.svg" alt=""></a>
+                    <a href=""><img src="images/instagram.svg" alt=""></a>
+                    <a href=""><img src="images/linkedin.svg" alt=""></a>
+                </span>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_text">
+                    <p class="small">
+                        &copy;
+                        2020 Clerksy, Inc. Clerksy is a registered trademark of Clerksy, Inc.
+                    </p>
+                </div>
+                <ul class="footer_links">
+                    <li class="footer_link"><a href="">Privacy Policy</a></li>
+                    <li class="footer_link"><a href="">Terms of Service</a></li>
+                    <li class="footer_link"><a href="">GDPR</a></li>
+                    <li class="footer_link"><a href="">Careers</a></li>
+                    <li class="footer_link"><a href="">Press Kit</a></li>
+                </ul>
+                    
+            
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
