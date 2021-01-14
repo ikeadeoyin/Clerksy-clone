@@ -61,8 +61,7 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    padding: 20px 0;
-    
+    padding: 20px 0;   
 }
 
 .nav_item{
@@ -76,6 +75,11 @@ header{
     font-weight: 700;
     border-radius: 50px;
     text-decoration: none;
+}
+.navbar .btn-secondary{
+    display: none;
+    background-color: #FBC8B8;
+    color: #163A24 !important;
 }
 
 /* HERO */
@@ -114,6 +118,10 @@ header{
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
 }
+
+.story_text{
+    text-align: center;
+}
 .story_text h2{
     font-size: 1.6rem;
     color: #163A24;
@@ -140,6 +148,8 @@ header{
 .partners h2{
     padding-bottom: 2.5rem;
     text-align: center;
+    color: #163A24;
+    font-size: 1.6rem;
 }
 
 .logos{
@@ -174,7 +184,6 @@ header{
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
     text-align: center;
-
 }
 
 .costumes h2{
@@ -208,13 +217,16 @@ header{
 .services{
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
-    /* text-align: center; */
+    text-align: center; 
 
 }
 .services h2{
     font-size: 1.625rem;
+    color:#163A24;
 }
-
+.services p{
+    color:#163A24;
+}
 .services_cards{
     display: grid;
     grid-template-columns: 1fr;
@@ -254,7 +266,6 @@ header{
     /* had to use 5rem cus of overlapping */
      padding-bottom: 5rem; 
     text-align: center; 
-
 }
 
 .pricing h3{
@@ -284,10 +295,11 @@ header{
     padding-bottom: 3.75rem;
 }
 .ebook_text{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-between; */
+    text-align: center;
 }
 .ebook h2{
     font-size: 1.6rem;
@@ -305,7 +317,6 @@ header{
     grid-template-columns: 1fr;
     grid-auto-rows: 0.2fr;
     row-gap: 10px;
-
 }
 
 /* CTA */
@@ -316,7 +327,7 @@ header{
     text-align: center;
 }
 
- .cta_flex{
+.cta_flex{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,24 +365,21 @@ header{
 }
 .newsletter p {
     color: #163A24;
-font-family: "Noto Sans", Arial, sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 .newsletter_form input{
     border: 1px solid #F2EFE6;
     border-radius: 255px;
     color: #163A24;
-    /* display: inline; */
-    font-size: 16px;
-    font-family: "Noto Sans", Arial, sans-serif;
+    font-size: 1rem;
+    font-family: "Noto Sans", sans-serif;
     height: 50px;
     left: 0;
     padding: 1px 0 1px 20px;
-    /* position: absolute; */
     width: 60%;
-
 }
 
 .small{
@@ -425,32 +433,21 @@ span > a{
 } 
 
 .footer_link{
-    list-style:none;
-    
+    list-style:none;   
 } 
 .footer_link a{
     text-decoration: none;
     color: #198C36;
     font-size: 0.68rem;
-
 }
-
 
 /* MEDIA QUERIES */
-
-@media screen and (min-width:560px){
-    /* .cta_img1,
-    .cta_img2{
-    display: block;
-    height: 250px;
-} */
-}
-
 @media screen and (min-width:768px){
     .container{
         padding-left: 8rem;
         padding-right: 8rem;
     }
+    
 
     .story{
         padding-top: 7.5rem;
@@ -465,7 +462,6 @@ span > a{
         column-gap: 24px;
         row-gap: 16px;
         align-items: center;
-    
     }
     .story_text h2{
         font-size: 2rem;
@@ -475,7 +471,7 @@ span > a{
     .story_text p {
         color: #163A24;
         font-family: "Noto Sans", Arial, sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 1.5;
     } 
@@ -485,6 +481,9 @@ span > a{
         padding-bottom: 7.5rem;
     }
 
+    .partners h2{
+        font-size: 2rem;
+    }
     .logos{
         grid-template-columns: repeat(5,120px);
         gap:20px;
@@ -521,6 +520,7 @@ span > a{
     .services{
         padding-top: 7.5rem;
         padding-bottom: 7.5rem;
+        text-align: center;
     }
     .services h2{
         font-size: 2rem;
@@ -569,13 +569,17 @@ span > a{
     .footer_bottom{
         display: flex;
         justify-content: space-between;
-    align-items: center;
+        align-items: center;
+    }
+
+    .footer_p{
+        margin-bottom: 0;
     }
 
     .footer_p,
     span{
-    margin-top: 0;
-   }
+        margin-top: 0;
+    }
    .footer_text{
        text-align: start;
        margin-right: 2rem;
@@ -586,22 +590,10 @@ span > a{
 
    .footer_link a{
        font-size: 0.7rem;
-   }
+    }
 }
 
-    
-
-
-    
-
-
 @media screen and (min-width:900px){
-
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center
-    }
 
     .two-halves{
         /* grid-template-columns: 1fr 1fr; */
@@ -621,8 +613,7 @@ span > a{
         display: grid;
         grid-template-columns: repeat(4,150px);
         column-gap: 20px;
-        text-align: center;
-        
+        text-align: center;   
     }
 
     .hr_icon{
@@ -637,25 +628,16 @@ span > a{
         justify-content: space-between;
     }
 
-    /* .numbers{
-        /* display: grid;
-        grid-template-columns: repeat(3,250px); 
-        display: flex;
-        justify-content: space-between;
-    } */
     .numbers{
         display: grid;
-    grid-template-columns: 200px 50px 200px 50px 200px;
-    column-gap: 10px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
+        grid-template-columns: 200px 50px 200px 50px 200px;
+        column-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
     }
     .pricing_img{
         display: block;
-    }
-
-    .pricing_img{
         max-width: 75px;
     }
 
@@ -668,11 +650,6 @@ span > a{
     .three{
         margin-bottom: 0;
     }
-
-    /* .cta_img1,
-    .cta_img2{
-    height: 400px;
-    width: 300px; */
 
     .newsletter_flex{
         display: flex;
@@ -689,11 +666,16 @@ span > a{
 }
 
 @media screen and (min-width:1000px){
-    /* .navbar{
+
+    .navbar{
         display: flex;
         justify-content: space-between;
-        align-items: center
-    } */
+        align-items: center;
+    }
+
+    .nav_items{
+        margin: 0;
+    }
 
     .btn-primary{
         background-color: #198C36;
@@ -717,4 +699,5 @@ span > a{
 
     .story_text h2{
         font-size: 3rem;
+    }
 }
