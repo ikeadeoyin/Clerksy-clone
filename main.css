@@ -82,6 +82,10 @@ header{
     color: #163A24 !important;
 }
 
+.navbar .btn-primary{
+    background-color: transparent;
+}
+
 /* HERO */
 .hero{
     padding-top: 60px;
@@ -675,6 +679,10 @@ span > a{
 
     .nav_items{
         margin: 0;
+    }
+
+    .navbar .btn-primary{
+        background-color: #198C36;
     }
 
     .btn-primary{
